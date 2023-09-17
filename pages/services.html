@@ -3,21 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../images/celtic.ico">
-    <title>My Website - Services</title>
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        aside {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        section {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h2, h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0077b6;
+            
+        }
+        .giga_title {
+            font-family: 'Kanit', sans-serif;
+            text-align: left;
+            font-size: 28px;
+            border-bottom: 1px solid #333;
+        }
+
+        .mega-title {
+            font-family: 'Kanit', sans-serif;
+            text-align: left;
+            font-size: 28px;
+        }
+        
+        .textik {
+            font-family: 'Kanit', sans-serif;
+            text-align: center;
+            font-size: 19px;
+            justify-content: space-between;
+        }
+
+        .circle-img{
+            display: flex;
+            align-items: center;
+            gap: 70px;
+            flex-direction: row;
+            width: 300px;
+            height: 100px;
+            
+            object-fit: cover;
+        }
+
+        .circle-img img {
+            border-radius: 50%;
+        }
+
+        .section .circle-img .img-1,
+        .circle-img .img-2{
+            display: flex;
+            flex-direction:  column;
+        }
+
+    </style>
+
 </head>
-<body id="services">
-    <header class="hero">
-        <div id="navbar" class="navbar">
-            <h1 class="logo">
-                <span class="text-primary"><i class="fas fa-book-open"></i>Celtic</span>
-            </h1>
+
+<body>
+    <header>
+        <div class="containerMain">
+            <div class="header">
+    
+                <div class="first">
+                    <div><img src="../images/derbes.png" alt="derbes"></div>
+                    <!-- <h1 style="color: darkgoldenrod;">Derbes</h1> -->
+                
+                    <nav>
+                        <ul class="navbar">
+                            <li class="navitem"><a href="home.html">Home</a></li>
+                            <li class="navitem"><a href="about.html">About</a></li>
+                            <li class="navitem"><a href="services.html">Services</a></li>
+                            <li class="navitem"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="second">
+                    <div class="FindStore"><a href="#">Find Store</a></div>
+                    <div class="Login"><button class="btn1" type="button"><a href="" target="_blank">Sign in</a></button></div>
+                    <div class="Register"><button class="btn2"><a href="#" target="_blank">Join now</a></button></div>
+                </div>
+    
+            </div>
         </div>
     </header>
 
+    <hr color="grey">
+
+    <div class="container">
+        <div class="flex-container">
+            <aside class="aside">
+                <h3>Drinks</h3>
+                <a href="#">Oleato™</a>
+                <a href="#">Hot Coffees</a>
+                <a href="#">Hot Teas</a>
+                <a href="#">Hot Drinks</a>
+                <a href="#">Frappuccino® Blended Beverages</a>
+                <a href="#">Cold Coffees</a>
+                <a href="#">Iced Teas</a>
+                <a href="#">Cold Drinks</a>
+
+                <h3>Food</h3>
+                <a href="#">Hot Breakfast</a>
+                <a href="#">Oatmeal & Yogurt</a>
+                <a href="#">Bakery</a>
+                <a href="#">Lunch</a>
+                <a href="#">Snacks & Sweets</a>
+
+                <h3>At Home Coffee</h3>
+                <a href="#">Whole Bean</a>
+                <a href="#">VIA® Instant</a>
+
+                <h3>Merchandise</h3>
+                <a href="#">Cold Cups</a>
+                <a href="#">Tumblers</a>
+                <a href="#">Mugs</a>
+                <a href="#">Other</a>
+            </aside>
+
+            <section class="section" >
+                <h2 class="mega-title">Menu / Hot Teas</h2>
+
+                <h3 class="giga_title">Chai Teas:</h3>
+
+                <div class="circle-img">
+                    <div class="img-1">
+                        <img src="../images/ChaiLatte.png" alt="derbes">
+                        <a href="#" class="textik">Chai Tea Latte</a>
+                    </div>
+
+                    <div class="img-2">
+                        <img src="../images/ChaiLatte.png" alt="derbes">
+                        <a href="#" class="textik">Chai Tea</a>
+                    </div>
+                </div>
+                
+
+                <h3 class="giga_title">Black Teas:</h3>
+                <div class="circle-img">
+                    <div class="img-1">
+                        <img src="../images/ChaiLatte.png" alt="derbes">
+                        <a href="#" class="textik">Earl</a>
+                    </div>
+
+                    <div class="img-2">
+                        <img src="../images/ChaiLatte.png" alt="derbes">
+                        <a href="#" class="textik">Teavana® </a>
+                    </div>
+                    <div class="img-1">
+                        <img src="../images/ChaiLatte.png" alt="derbes">
+                        <a href="#" class="textik">Gavanna</a>
+                    </div>
+
+                    <div class="img-2">
+                        <img src="../images/ChaiLatte.png" alt="derbes">
+                        <a href="#" class="textik">Royal</a>
+                    </div>
+                </div>
+
+                <h3 class="giga_title">Green Teas:</h3>
+                <div class="circle-img">
+                <div class="img-1">
+                    <img src="../images/ChaiLatte.png" alt="derbes">
+                    <a href="#" class="textik">Emperor’s</a>
+                </div>
+
+                <div class="img-2">
+                    <img src="../images/ChaiLatte.png" alt="derbes">
+                    <a href="#" class="textik">Matcha </a>
+                </div>
+                <div class="img-1">
+                    <img src="../images/ChaiLatte.png" alt="derbes">
+                    <a href="#" class="textik">Honey</a>
+                </div>
+
+                <div class="img-2">
+                    <img src="../images/ChaiLatte.png" alt="derbes">
+                    <a href="#" class="textik">Jade</a>
+                </div>
+                </div>
+
+                <h3 class="giga_title">Herbal Teas:</h3>
+                <div class="circle-img">
+                    <div class="img-2">
+                        <img src="../images/ChaiLatte.png" alt="derbes">
+                        <a href="#" class="textik">Mint </a>
+                    </div>
+                    <div class="img-1">
+                        <img src="../images/ChaiLatte.png" alt="derbes">
+                        <a href="#" class="textik">Tranquility®</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
